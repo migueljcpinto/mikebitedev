@@ -19,31 +19,61 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>{" "}
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Nursing</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp at{" "}
+        After obtaining my degree in
+        <span className="font-medium"> Nursing</span>, I chose to delve into my
+        enthusiasm for programming. I joined a coding bootcamp at{" "}
         <span className="font-medium text-orange-400	">Neuefische School </span>{" "}
-        and learned{" "}
-        <span className="font-medium">front-end web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect and the possibility of creating new and creative
-        things. I <span className="underline">love</span> the feeling of finally
-        figuring out a solution to a problem. My core stack is{" "}
+        , where I acquired skills in
+        <span className="font-medium"> front-end web development</span>.{" "}
+        <span className="italic">What I relish most about programming</span> is
+        the challenge of problem-solving and the thrill of crafting innovative
+        solutions. I <span className="underline">love</span> the feeling of
+        finally figuring out a solution to a problem. My primary skills lies in{" "}
         <span className="font-medium">
           React, Next.js, Node.js, and MongoDB
         </span>
-        . I am also currently learning TypeScript and Prisma. I am always eager
-        to acquire new technologies. I am currently searching for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        .
+        <br />
       </p>
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy
-        participating in sports, watching movies, and spending time with my
-        family. I also have a keen interest in{" "}
-        <span className="font-medium">learning new things</span> and I am
-        currently learning about{" "}
-        <span className="font-medium">politics and finances</span>.
+        {" "}
+        To further bolster my back-end prowess, I'm currently diving into
+        <span className="font-medium"> SQL</span>, enhancing my database
+        management skills. Additionally, I've been brushing up on web design
+        principles and familiarizing myself with design tools such as{" "}
+        <span className="text-figma-red font-extrabold">F</span>
+        <span className="text-figma-orange font-extrabold">i</span>
+        <span className="text-figma-violet font-extrabold">g</span>
+        <span className="text-figma-blue font-extrabold">m</span>
+        <span className="text-figma-green font-extrabold">a</span>. The synergy
+        between design and development intrigues me, making projects not only
+        functional but also visually appealing.
+      </p>
+      <br />
+      <p>
+        Always open to integrating into training programs, I'm consistently
+        seeking to explore new technologies. Presently, I'm enhancing my skills
+        with TypeScript and Prisma and am actively seeking a{" "}
+        <span className="font-medium">full-time role</span> as a software
+        developer.
+      </p>{" "}
+      <br />
+      <p>
+        Beyond the world of coding,{" "}
+        <span className="italic"> my background in Nursing</span> offers a
+        unique lens, especially in health-tech projects, bridging the gap
+        between medical professionals and tech developers. In my leisure time, I
+        embrace a love for physical activity, be it through running, swimming,
+        or pushing my limits in crossfit. I'm also an ardent movie buff and
+        treasure the time spent with my family. A fervent believer in{" "}
+        <span className="font-medium">lifelong learning</span>, my weekends
+        often involve attending workshops or online courses. My readings are
+        currently steered towards{" "}
+        <span className="font-medium">
+          {" "}
+          politics, finance, and the nuances of global tech shifts
+        </span>
+        .
       </p>{" "}
     </motion.section>
   );

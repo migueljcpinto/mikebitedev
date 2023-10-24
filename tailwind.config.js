@@ -12,6 +12,13 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "figma-red": "#F24E1E",
+        "figma-orange": "#FF7262",
+        "figma-violet": "#A259FF",
+        "figma-blue": "#1ABCFE",
+        "figma-green": "#0ACF83",
+      },
     },
   },
   plugins: [],

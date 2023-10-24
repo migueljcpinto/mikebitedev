@@ -4,7 +4,6 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import teamupImg from "@/public/teamup.png";
 import popcornImg from "@/public/popcorn.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -73,11 +72,12 @@ export const projectsData = [
       "PopCorn is a movie app using OMDB API, allowing users to search, view, and curate watched movies with a IMDB-inspired UI.",
     tags: ["React", "JavaScript", "Next.js", "Styled-Components", "Vercel"],
     imageUrl: popcornImg,
+    website: "https://pop-corn-ecru.vercel.app/",
   },
   {
-    title: "Team´Up",
+    title: "Team'Up",
     description:
-      '"TeamUp" is a Nurse Scheduling Application conceptualized as a capstone project for a Web Development Bootcamp.',
+      "Team'Up is a Nurse Scheduling Application conceptualized as a capstone project for a Web Development Bootcamp.",
     tags: [
       "React",
       "Next.js",
@@ -87,6 +87,7 @@ export const projectsData = [
       "Vercel",
     ],
     imageUrl: teamupImg,
+    website: "https://capstone-project-teamup.vercel.app/",
   },
 ] as const;
 

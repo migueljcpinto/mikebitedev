@@ -61,12 +61,8 @@ export default function Intro() {
         much experience <span className="font-bold"> yet</span>, but I´m an avid
         learner in this new world of technology.
         <br />
-        My focus is <span className="underline">React (Next.js).</span>
-        <br />
-        <br />
-        <span className="italic">
-          I´m embarking on a new journey into the world of web development!
-        </span>
+        My focus is Front-end Web Development -{" "}
+        <span className="underline"> React (Next.js).</span>
       </motion.h1>
 
       <motion.div
