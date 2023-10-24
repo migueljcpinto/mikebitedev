@@ -18,7 +18,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>{" "}
-      <p className="mb-3">
+      <p className="mb-3 text-left">
         After obtaining my degree in
         <span className="font-medium"> Nursing</span>, I chose to delve into my
         enthusiasm for programming. I joined a coding bootcamp at{" "}
@@ -27,20 +27,19 @@ export default function About() {
         <span className="font-medium"> front-end web development</span>.{" "}
         <span className="italic">What I relish most about programming</span> is
         the challenge of problem-solving and the thrill of crafting innovative
-        solutions. I <span className="underline">love</span> the feeling of
-        finally figuring out a solution to a problem. My primary skills lies in{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        .
-        <br />
+        solutions. I <span className="font-semibold text-red-600">love</span>{" "}
+        the feeling of finally figuring out a solution to a problem. My primary
+        skills lies in{" "}
+        <span className="font-medium">React, Next.js, Node.js, </span> and{" "}
+        <span className="font-medium">MongoDB</span>.
       </p>
-      <p>
+      <p className="mb-3 text-left">
         {" "}
         To further bolster my back-end prowess, I'm currently diving into
-        <span className="font-medium"> SQL</span>, enhancing my database
-        management skills. Additionally, I've been brushing up on web design
-        principles and familiarizing myself with design tools such as{" "}
+        <span className="font-medium"> SQL</span> and{" "}
+        <span className="font-medium">Prisma</span>, enhancing my database
+        management skills. Additionally, I've been brushing up on Typescript and
+        web design principles and familiarizing myself with design tools such as{" "}
         <span className="text-figma-red font-extrabold">F</span>
         <span className="text-figma-orange font-extrabold">i</span>
         <span className="text-figma-violet font-extrabold">g</span>
@@ -49,16 +48,13 @@ export default function About() {
         between design and development intrigues me, making projects not only
         functional but also visually appealing.
       </p>
-      <br />
-      <p>
+      <p className="mb-3 text-left">
         Always open to integrating into training programs, I'm consistently
-        seeking to explore new technologies. Presently, I'm enhancing my skills
-        with TypeScript and Prisma and am actively seeking a{" "}
+        seeking to explore new technologies. Presently, I'm actively seeking a{" "}
         <span className="font-medium">full-time role</span> as a software
         developer.
       </p>{" "}
-      <br />
-      <p>
+      <p className="mb-3 text-left">
         Beyond the world of coding,{" "}
         <span className="italic"> my background in Nursing</span> offers a
         unique lens, especially in health-tech projects, bridging the gap

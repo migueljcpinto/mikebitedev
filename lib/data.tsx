@@ -46,22 +46,35 @@ export const experiencesData = [
     location: "Germany",
     description: (
       <>
-        I settled in Frankfurt in 2012, working as a nurse for three years.
-        <br />
+        I settled in Frankfurt in 2012, working as a nurse for three years,
+        gaining experience across various departments. <br />
         Then, in 2015, I moved to Munich where I continued my career as an
-        intensive care nurse.
+        intensive care nurse, further accumulating diverse experiences in the
+        field.{" "}
       </>
     ),
     icon: React.createElement(CgWorkAlt),
-    date: "2012 - present",
+    date: "2012 - 2024",
+  },
+  {
+    title: "Self-Learning",
+    location: "Online",
+    description: (
+      <>
+        I embarked on a journey of self-learning through online courses and
+        workshops, initiating myself into web development and technology.
+      </>
+    ),
+    icon: React.createElement(LuGraduationCap),
+    date: "2022 - Ongoing",
   },
   {
     title: "Frontend Bootcamp",
     location: "Munich, Germany",
     description:
-      "I graduated after 6 months of intense studying. My stack includes React, Next.js, JavaScript, and MongoDB. I'm currently learning TypeScript and SQL, and I'm open to full-time opportunities.",
+      "I graduated after 6 months of intense studying. My stack includes React, Next.js, JavaScript and MongoDB. I'm currently learning TypeScript and SQL, and I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: "2023 - present",
+    date: "2023 - Ongoing",
   },
 ] as const;
 
