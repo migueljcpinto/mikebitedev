@@ -32,7 +32,7 @@ export default function About() {
           </span>
         </a>{" "}
         , where I acquired skills in
-        <span className="font-medium"> front-end web development</span>.{" "}
+        <span className="font-medium"> Frontend Web Development</span>.{" "}
         <span className="italic">What I relish most about programming</span> is
         the challenge of problem-solving and the thrill of crafting innovative
         solutions. I <span className="font-semibold text-red-600">love</span>{" "}
