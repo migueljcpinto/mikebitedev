@@ -22,7 +22,15 @@ export default function About() {
         After obtaining my degree in
         <span className="font-medium"> Nursing</span>, I chose to delve into my
         enthusiasm for programming. I joined a coding bootcamp at{" "}
-        <span className="font-medium text-orange-400	">Neuefische School </span>{" "}
+        <a
+          href="https://www.neuefische.de/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="font-medium text-orange-400	">
+            Neuefische School{" "}
+          </span>
+        </a>{" "}
         , where I acquired skills in
         <span className="font-medium"> front-end web development</span>.{" "}
         <span className="italic">What I relish most about programming</span> is
@@ -35,12 +43,13 @@ export default function About() {
       </p>
       <p className="mb-3 text-left">
         {" "}
-        To further bolster my back-end prowess, I'm currently diving into
-        <span className="font-medium"> SQL</span> and{" "}
-        <span className="font-medium">Prisma</span>, enhancing my database
-        management skills. Additionally, I've been brushing up on Typescript and
-        web design principles and familiarizing myself with design tools such as{" "}
-        <span className="text-figma-red font-extrabold">F</span>
+        Additionally, I've been brushing up on{" "}
+        <span className="bg-blue-400 text-white px-2 py-1 rounded">
+          {" "}
+          Typescript
+        </span>{" "}
+        and web design principles and familiarizing myself with design tools
+        such as <span className="text-figma-red font-extrabold">F</span>
         <span className="text-figma-orange font-extrabold">i</span>
         <span className="text-figma-violet font-extrabold">g</span>
         <span className="text-figma-blue font-extrabold">m</span>
