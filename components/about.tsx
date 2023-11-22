@@ -58,12 +58,6 @@ export default function About() {
         functional but also visually appealing.
       </p>
       <p className="mb-3 text-left">
-        Always open to integrating into training programs, I'm consistently
-        seeking to explore new technologies. Presently, I'm actively seeking a{" "}
-        <span className="font-medium">full-time role</span> as a software
-        developer.
-      </p>{" "}
-      <p className="mb-3 text-left">
         Beyond the world of coding,{" "}
         <span className="italic"> my background in Nursing</span> offers a
         unique lens, especially in health-tech projects, bridging the gap
