@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import teamupImg from "@/public/teamup.png";
 import popcornImg from "@/public/popcorn.png";
+import mikemapsImg from "@/public/mikemaps.png";
 
 export const links = [
   {
@@ -86,6 +87,14 @@ export const projectsData = [
     tags: ["React", "JavaScript", "Next.js", "Styled-Components", "Vercel"],
     imageUrl: popcornImg,
     website: "https://pop-corn-ecru.vercel.app/",
+  },
+  {
+    title: "MikeMaps",
+    description:
+      "A GoogleMaps-like application in which you can save locations. Following Jonas Schmedtmann's React course on Udemy. ",
+    tags: ["React", "React Router", "context API", "Local Storage"],
+    imageUrl: mikemapsImg,
+    website: "https://mike-maps.vercel.app/",
   },
   {
     title: "Team'Up",
