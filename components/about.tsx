@@ -18,7 +18,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>{" "}
-      <p className="mb-3 text-left">
+      <p className="mb-3 text-center">
         After obtaining my degree in
         <span className="font-medium"> Nursing</span>, I chose to delve into my
         enthusiasm for programming. I joined a coding bootcamp at{" "}
@@ -41,7 +41,7 @@ export default function About() {
         <span className="font-medium">React, Next.js, Node.js, </span> and{" "}
         <span className="font-medium">MongoDB</span>.
       </p>
-      <p className="mb-3 text-left">
+      <p className="mb-3 text-center">
         {" "}
         Additionally, I've been brushing up on{" "}
         <span className="bg-blue-400 text-white px-2 py-1 rounded">
@@ -57,7 +57,7 @@ export default function About() {
         between design and development intrigues me, making projects not only
         functional but also visually appealing.
       </p>
-      <p className="mb-3 text-left">
+      <p className="mb-3 text-center">
         Beyond the world of coding,{" "}
         <span className="italic"> my background in Nursing</span> offers a
         unique lens, especially in health-tech projects, bridging the gap

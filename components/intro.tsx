@@ -1,23 +1,26 @@
 "use client";
 
-import Image from "next/image";
-import React from "react";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
+import { HiDownload } from "react-icons/hi";
+import { RubberAnimation } from "./rubber-animation";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const hello = "Hi!  I'm Miguel!".split("");
+  const dreamJob = "Web Developer".split("");
+
   return (
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-20 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -53,18 +56,22 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-1xl font-medium !leading-[1.5] sm:text-2xl"
+        className=" mb-20 mt-10 px-4 text-1xl font-medium !leading-[1.5] sm:text-2xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hi!, I'm <span className="font-bold">Miguel</span>! <br /> <br />
-        Transitioning from Nursing to Tech, I've honed my <br />
-        <span className="font-bold text-blue-500">
-          Frontend Web Development
-        </span>{" "}
-        skills, <br />
-        specializing in <span className="underline"> React</span> and{" "}
-        <span className="underline">Next.js</span>. <br />
+        {hello.map((letter, index) => (
+          <RubberAnimation key={index}>
+            {letter === " " ? "\u00A0" : letter}
+          </RubberAnimation>
+        ))}
+        <br />
+        <br />
+        {dreamJob.map((letter, index) => (
+          <RubberAnimation className="text-5xl" key={index}>
+            {letter === " " ? "\u00A0" : letter}
+          </RubberAnimation>
+        ))}{" "}
       </motion.h1>
 
       <motion.div
