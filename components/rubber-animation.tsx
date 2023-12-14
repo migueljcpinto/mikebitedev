@@ -46,21 +46,29 @@ export const RubberAnimation: React.FC<RubberAnimationProps> = ({
     setIsPlaying(true);
   };
 
+  const handleHoverStart = () => {
+    if (!isPlaying) {
+      playRubberBandAnimation();
+      setIsHovered(true);
+    }
+  };
+
+  const handleAnimationComplete = () => {
+    setIsPlaying(false);
+  };
+
   return (
     <motion.span
       animate={controls}
       onTap={() => {
-        if (isPlaying) return;
-        playRubberBandAnimation();
+        if (!isPlaying) {
+          playRubberBandAnimation();
+        }
       }}
-      onHoverStart={() => {
-        if (isPlaying) return;
-        playRubberBandAnimation();
-        setIsHovered(true);
-      }}
-      onAnimationComplete={() => setIsPlaying(false)}
+      onHoverStart={handleHoverStart}
+      onAnimationComplete={handleAnimationComplete}
       className={`font-bold text-3xl inline-block ${
-        isHovered ? randomColor : ""
+        isHovered ? getRandomColor() : ""
       } ${className || ""}`}
     >
       {children}{" "}

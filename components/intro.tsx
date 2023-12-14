@@ -66,12 +66,16 @@ export default function Intro() {
           </RubberAnimation>
         ))}
         <br />
-        <br />
+
         {dreamJob.map((letter, index) => (
-          <RubberAnimation className="text-5xl" key={index}>
+          <RubberAnimation className="text-4xl" key={index}>
             {letter === " " ? "\u00A0" : letter}
           </RubberAnimation>
-        ))}{" "}
+        ))}
+        <br />
+        <span className="text-gray-500 text-sm">
+          Passionate about coding and always learning!
+        </span>
       </motion.h1>
 
       <motion.div
