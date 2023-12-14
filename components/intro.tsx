@@ -56,19 +56,22 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className=" mb-20 mt-10 px-4 text-1xl font-medium !leading-[1.5] sm:text-2xl"
+        className=" mb-20 mt-10 px-4 text-1xl font-medium !leading-[1.5] "
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         {hello.map((letter, index) => (
-          <RubberAnimation key={index}>
+          <RubberAnimation className="text-gray-700" key={index}>
             {letter === " " ? "\u00A0" : letter}
           </RubberAnimation>
         ))}
         <br />
 
         {dreamJob.map((letter, index) => (
-          <RubberAnimation className="text-4xl" key={index}>
+          <RubberAnimation
+            className="text-gray-700 text-4xl sm:text-6xl"
+            key={index}
+          >
             {letter === " " ? "\u00A0" : letter}
           </RubberAnimation>
         ))}
