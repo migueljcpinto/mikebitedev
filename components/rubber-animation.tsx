@@ -1,5 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
-import React, { ReactNode, useState } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 
 interface RubberAnimationProps {
   className?: string;
@@ -13,9 +13,15 @@ const getRandomColor = () => {
     "text-yellow-500",
     "text-red-500",
     "text-purple-500",
+    "text-cyan-500",
+    "text-pink-500",
+    "text-orange-500",
+    "text-indigo-500",
   ];
-  const randomIndex = Math.floor(Math.random() * colors.length);
-  return colors[randomIndex];
+
+  const shuffledColors = colors.sort(() => Math.random() - 0.5);
+  const randomIndex = Math.floor(Math.random() * shuffledColors.length);
+  return shuffledColors[randomIndex];
 };
 
 const rubberBandScale = [
@@ -56,6 +62,14 @@ export const RubberAnimation: React.FC<RubberAnimationProps> = ({
   const handleAnimationComplete = () => {
     setIsPlaying(false);
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      playRubberBandAnimation();
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, []);
 
   return (
     <motion.span
