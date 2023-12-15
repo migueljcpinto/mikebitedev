@@ -66,10 +66,10 @@ export const RubberAnimation: React.FC<RubberAnimationProps> = ({
   useEffect(() => {
     const intervalId = setInterval(() => {
       playRubberBandAnimation();
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [playRubberBandAnimation]);
 
   return (
     <motion.span
