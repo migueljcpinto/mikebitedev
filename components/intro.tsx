@@ -66,7 +66,6 @@ export default function Intro() {
           </RubberAnimation>
         ))}
         <br />
-
         {dreamJob.map((letter, index) => (
           <RubberAnimation
             className="text-gray-700 text-4xl sm:text-6xl"
@@ -75,8 +74,8 @@ export default function Intro() {
             {letter === " " ? "\u00A0" : letter}
           </RubberAnimation>
         ))}
-        <br />
-        <span className="text-gray-500 text-sm">
+        <br /> <br />
+        <span className="text-gray-500 text-sm mb-10">
           Passionate about coding and always learning!
         </span>
       </motion.h1>
