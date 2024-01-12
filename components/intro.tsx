@@ -49,7 +49,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         {hello.map((letter, index) => (
-          <RubberAnimation className="text-gray-700" key={index}>
+          <RubberAnimation className="text-gray-400" key={index}>
             {letter === " " ? "\u00A0" : letter}
           </RubberAnimation>
         ))}
