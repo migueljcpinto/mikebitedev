@@ -1,0 +1,23 @@
+import { Cursor, useTypewriter } from "react-simple-typewriter";
+
+type Props = {};
+
+export default function Typewriter({}: Props) {
+  const [text, count] = useTypewriter({
+    words: [
+      "mike-the-bite.tsx",
+      "Web Developer Rookie",
+      "Frontend Artisan in Training",
+      "<NurseTurnedDev />",
+    ],
+    loop: true,
+    delaySpeed: 2000,
+  });
+
+  return (
+    <div>
+      <span className="text-3xl font-bold">{text}</span>
+      <Cursor cursorColor="#F7AB0A" />
+    </div>
+  );
+}

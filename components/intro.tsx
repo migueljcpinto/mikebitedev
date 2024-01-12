@@ -9,12 +9,13 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { RubberAnimation } from "./rubber-animation";
+import Typewriter from "./typewriter";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   const hello = "Hi!  I'm Miguel!".split("");
-  const dreamJob = "Web Developer".split("");
 
   return (
     <section
@@ -36,22 +37,9 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-24 w-24 rounded-full object-cover border-[0.35rem] shadow-xl"
             />
           </motion.div>
-          <motion.span
-            className="absolute -bottom-1 right-0 text-4xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-          >
-            👋
-          </motion.span>
         </div>
       </div>
 
@@ -66,14 +54,10 @@ export default function Intro() {
           </RubberAnimation>
         ))}
         <br />
-        {dreamJob.map((letter, index) => (
-          <RubberAnimation
-            className="text-gray-700 text-4xl sm:text-6xl"
-            key={index}
-          >
-            {letter === " " ? "\u00A0" : letter}
-          </RubberAnimation>
-        ))}
+        <br />
+        <div className="h-[50px]">
+          <Typewriter />
+        </div>
         <br /> <br />
         <span className="text-gray-500 text-sm mb-10">
           Passionate about coding and always learning!
