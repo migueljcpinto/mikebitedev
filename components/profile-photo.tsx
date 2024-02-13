@@ -5,7 +5,7 @@ import BackgroundCircles from "./background-circles";
 
 function ProfilePhoto() {
   return (
-    <div className="flex items-center justify-center py-10">
+    <div className="flex items-center justify-center ">
       <BackgroundCircles>
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
