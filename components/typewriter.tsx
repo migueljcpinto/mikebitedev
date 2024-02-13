@@ -5,7 +5,6 @@ type Props = {};
 export default function Typewriter({}: Props) {
   const [text, count] = useTypewriter({
     words: [
-      "mike-the-bite.tsx",
       "Web Developer Rookie",
       "Frontend Artisan in Training",
       "<NurseTurnedDev />",
