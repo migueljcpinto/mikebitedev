@@ -10,6 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { RubberAnimation } from "./rubber-animation";
 import Typewriter from "./typewriter";
+import ProfilePhoto from "./profile-photo";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -23,25 +24,7 @@ export default function Intro() {
       id="home"
       className="mb-20 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
-      <div className="flex items-center justify-center">
-        <div className="relative">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ type: "tween", duration: 0.2 }}
-          >
-            <Image
-              src="/Profileimage.png"
-              alt="Miguel Portrait"
-              width="192"
-              height="192"
-              quality="95"
-              priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] shadow-xl"
-            />
-          </motion.div>
-        </div>
-      </div>
+      <ProfilePhoto />
 
       <motion.h1
         className=" mb-20 mt-10 px-4 text-1xl font-medium !leading-[1.5] "
