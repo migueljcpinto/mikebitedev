@@ -65,7 +65,7 @@ function SparklingBtn() {
     <div ref={scope}>
       <button
         onClick={onButtonClick}
-        className="relative rounded-full border-2 bg-white px-7 py-3 text-xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 "
+        className="relative rounded-full border-2 bg-white px-7 py-4 text-xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 "
       >
         <a href="/CV.pdf" download>
           <span className="sr-only">Download CV</span>
