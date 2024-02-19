@@ -1,4 +1,3 @@
-import { getRandomColor } from "@/lib/utils";
 import { stagger, useAnimate, animate } from "framer-motion";
 import React from "react";
 
@@ -7,7 +6,6 @@ type AnimationSequence = Parameters<typeof animate>[0];
 function SparklingBtn() {
   const [scope, animate] = useAnimate();
   const textBtn = ["D", "o", "w", "n", "l", "o", "a", "d", "C", "V"];
-  const randomColor = getRandomColor();
 
   function randomNumberBetween(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -89,7 +87,7 @@ function SparklingBtn() {
           <span className="aria-hidden absolute inset-0 block pointer-events-none z-10">
             {Array.from({ length: 20 }).map((_, index) => (
               <svg
-                className={`absolute left-1/2 top-1/2 opacity-0 sparkle-${index} ${randomColor}`}
+                className={`absolute left-1/2 top-1/2 opacity-0 sparkle-${index} text-yellow-500`}
                 key={index}
                 viewBox="0 0 122 117"
                 width="10"
