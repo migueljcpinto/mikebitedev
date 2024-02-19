@@ -1,28 +1,12 @@
 import { motion, useAnimation } from "framer-motion";
+import { getRandomColor } from "@/lib/utils";
+
 import React, { useEffect, useState } from "react";
 
 interface RubberAnimationProps {
   className?: string;
   children: React.ReactNode;
 }
-
-const getRandomColor = () => {
-  const colors = [
-    "text-blue-500",
-    "text-green-500",
-    "text-yellow-500",
-    "text-red-500",
-    "text-purple-500",
-    "text-cyan-500",
-    "text-pink-500",
-    "text-orange-500",
-    "text-indigo-500",
-  ];
-
-  const shuffledColors = colors.sort(() => Math.random() - 0.5);
-  const randomIndex = Math.floor(Math.random() * shuffledColors.length);
-  return shuffledColors[randomIndex];
-};
 
 const rubberBandScale = [
   "scale(1,1)",

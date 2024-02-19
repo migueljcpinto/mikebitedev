@@ -11,6 +11,7 @@ import { HiDownload } from "react-icons/hi";
 import { RubberAnimation } from "./rubber-animation";
 import Typewriter from "./typewriter";
 import ProfilePhoto from "./profile-photo";
+import SparklingBtn from "./sparklingBtn";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -64,14 +65,9 @@ export default function Intro() {
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
-        <a
-          href="/CV.pdf"
-          download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-        >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
+
+        <SparklingBtn />
+
         <a
           href="https://www.linkedin.com/in/migueljcpinto/"
           target="_blank"
