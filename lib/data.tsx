@@ -5,6 +5,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import teamupImg from "@/public/teamup.png";
 import popcornImg from "@/public/popcorn.png";
 import mikemapsImg from "@/public/mikemaps.png";
+import lensaiImg from "@/public/lensai.png";
+import aicandidatoImg from "@/public/aicandidato.png";
 
 export const links = [
   {
@@ -110,6 +112,38 @@ export const projectsData = [
     ],
     imageUrl: teamupImg,
     website: "https://capstone-project-teamup.vercel.app/",
+  },
+  {
+    title: "AI Candidato",
+    description:
+      "AI Candidato is a platform where you can chat to various Chatbots representing candidates for Portugal's legislative elections.",
+    tags: [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Clerk",
+      "OpenAI API",
+      "PlanetScale",
+      "Pinecone",
+    ],
+    imageUrl: aicandidatoImg,
+    website: "https://ai-candidato.vercel.app/",
+  },
+  {
+    title: "Lens AI",
+    description:
+      "With LensAI we can modify and alter images using Cloudinary's artificial intelligence.",
+    tags: [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "MongoDB",
+      "Clerk",
+      "Cloudinary AI",
+      "Vercel",
+    ],
+    imageUrl: lensaiImg,
+    website: "https://lensai.vercel.app/",
   },
 ] as const;
 

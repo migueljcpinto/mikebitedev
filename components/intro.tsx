@@ -11,7 +11,7 @@ import { HiDownload } from "react-icons/hi";
 import { RubberAnimation } from "./rubber-animation";
 import Typewriter from "./typewriter";
 import ProfilePhoto from "./profile-photo";
-import SparklingBtn from "./sparklingBtn";
+import SparklingBtn from "./sparkling-btn";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);

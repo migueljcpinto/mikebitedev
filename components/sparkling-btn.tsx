@@ -1,11 +1,10 @@
-import { stagger, useAnimate, animate } from "framer-motion";
+import { useAnimate, animate } from "framer-motion";
 import React from "react";
 
 type AnimationSequence = Parameters<typeof animate>[0];
 
 function SparklingBtn() {
   const [scope, animate] = useAnimate();
-  const textBtn = ["D", "o", "w", "n", "l", "o", "a", "d", "C", "V"];
 
   function randomNumberBetween(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -52,11 +51,9 @@ function SparklingBtn() {
 
     animate([
       ...sparklesReset,
-      [".letter", { y: -24 }, { duration: 0.2, delay: stagger(0.05) }],
-      ["button", { scale: 0.8 }, { duration: 0.1, at: "<" }],
-      ["button", { scale: 1 }, { duration: 0.1 }],
+      ["button", { scale: 0.9 }, { duration: 0.1, at: "<" }],
       ...sparklesAnimation,
-      [".letter", { y: 0 }, { duration: 0.000001 }],
+      ["button", { scale: 1 }, { duration: 0.1 }],
       ...sparklesFadeOut,
     ]);
   }
@@ -68,22 +65,7 @@ function SparklingBtn() {
         className="relative rounded-full border-2 bg-white px-7 py-4 text-xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 "
       >
         <a href="/CV.pdf" download>
-          <span className="sr-only">Download CV</span>
-          <span
-            className="flex justify-center items-center h-6 overflow-hidden"
-            aria-hidden
-          >
-            {textBtn.map((letter, index) => (
-              <span
-                data-letter={letter}
-                className="letter relative inline-block h-6 leading-6 after:absolute after:left-0 after:top-full after:h-6 after:content-[attr(data-letter)]"
-                key={`${letter}-${index}`}
-              >
-                {letter}
-                {index === 7 && <span>&nbsp;</span>}
-              </span>
-            ))}
-          </span>
+          Download CV
           <span className="aria-hidden absolute inset-0 block pointer-events-none z-10">
             {Array.from({ length: 20 }).map((_, index) => (
               <svg
