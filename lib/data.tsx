@@ -85,7 +85,7 @@ export const experiencesData = [
     location: "Remote, Harvard University",
     description:
       "I completed the Introduction to Computer Science course, where I was able to learn and understand basic computer science concepts, such as C, Algorithms, SQL, Python, Flask, and JavaScript.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(LuGraduationCap),
     date: "2023 - 2024",
   },
 ] as const;
