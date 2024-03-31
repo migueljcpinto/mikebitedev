@@ -7,6 +7,7 @@ import popcornImg from "@/public/popcorn.png";
 import mikemapsImg from "@/public/mikemaps.png";
 import lensaiImg from "@/public/lensai.png";
 import aicandidatoImg from "@/public/aicandidato.png";
+import bookmarkifyImg from "@/public/bookmarkify.png";
 
 export const links = [
   {
@@ -72,12 +73,20 @@ export const experiencesData = [
     date: "2022 - Ongoing",
   },
   {
-    title: "Frontend Bootcamp",
+    title: "Web Development Bootcamp",
     location: "Munich, Germany",
     description:
       "I graduated after 6 months of intense studying. My stack includes React, Next.js, JavaScript and MongoDB. I'm currently learning TypeScript and SQL, and I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: "2023 - Ongoing",
+    date: "2023",
+  },
+  {
+    title: "CS50x - Introduction to Computer Science",
+    location: "Remote, Harvard University",
+    description:
+      "I completed the Introduction to Computer Science course, where I was able to learn and understand basic computer science concepts, such as C, Algorithms, SQL, Python, Flask, and JavaScript.",
+    icon: React.createElement(FaReact),
+    date: "2023 - 2024",
   },
 ] as const;
 
@@ -101,7 +110,7 @@ export const projectsData = [
   {
     title: "Team'Up",
     description:
-      "Team'Up is a Nurse Scheduling Application conceptualized as a capstone project for a Web Development Bootcamp.",
+      "Team'Up is a Nurse Scheduling Application conceptualized as a capstone project for my Web Development Bootcamp.",
     tags: [
       "React",
       "Next.js",
@@ -145,6 +154,14 @@ export const projectsData = [
     imageUrl: lensaiImg,
     website: "https://lensai.vercel.app/",
   },
+  {
+    title: "Bookmarkify",
+    description:
+      "A Chrome Extension that empowers users to bookmark and revisit important moments within YouTube videos, as part of the final project for Harvard's CS50 course.",
+    tags: ["Chrome Extension APIs", "YouTube Player API", "JavaScript"],
+    imageUrl: bookmarkifyImg,
+    website: "https://github.com/migueljcpinto/Bookmarkify",
+  },
 ] as const;
 
 export const skillsData = [
@@ -152,14 +169,16 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "TypeScript",
-  "React",
+  "Python",
+  "React.js",
   "Next.js",
   "NextAuth.js",
   "Node.js",
   "Git",
-  "Tailwind",
-  "Prisma",
+  "TailwindCSS",
+  "SQL",
   "MongoDB",
+  "Prisma",
   "mongoose",
   "Redux",
   "Framer Motion",
