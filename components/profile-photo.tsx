@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import BackgroundCircles from "./background-circles";
 
@@ -6,7 +7,11 @@ function ProfilePhoto() {
   return (
     <div className="flex items-center justify-center ">
       <BackgroundCircles>
-        <div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ type: "tween", duration: 0.2 }}
+        >
           <Image
             src="/Profileimage.png"
             alt="Miguel Portrait"
@@ -16,7 +21,7 @@ function ProfilePhoto() {
             priority={true}
             className="h-24 w-24 rounded-full object-cover border-[0.35rem] shadow-xl "
           />
-        </div>
+        </motion.div>
       </BackgroundCircles>
     </div>
   );

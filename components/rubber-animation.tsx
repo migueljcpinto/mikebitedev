@@ -21,7 +21,6 @@ export const RubberAnimation: React.FC<RubberAnimationProps> = ({
   className,
   children,
 }) => {
-  const randomColor = getRandomColor();
   const controls = useAnimation();
   const [isPlaying, setIsPlaying] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
