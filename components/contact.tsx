@@ -1,15 +1,27 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import animationData from "@/lib/confetti.json";
+import Lottie from "react-lottie";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const [emailSent, setEmailSent] = useState(false);
+
+  const defaultOptions = {
+    loop: emailSent,
+    autoplay: emailSent,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   return (
     <motion.section
@@ -48,7 +60,7 @@ export default function Contact() {
             toast.error(error);
             return;
           }
-
+          setEmailSent(true);
           toast.success("Email sent successfully!");
         }}
       >
@@ -67,7 +79,14 @@ export default function Contact() {
           required
           maxLength={5000}
         />
-        <SubmitBtn />
+        <div className="relative">
+          {emailSent && (
+            <div className="absolute md:-bottom-[280px] md:-left-[460px] -bottom-[270px] -right-[135px]">
+              <Lottie options={defaultOptions} height={700} width={700} />
+            </div>
+          )}
+          <SubmitBtn />
+        </div>
       </form>
     </motion.section>
   );
