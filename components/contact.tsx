@@ -15,7 +15,7 @@ export default function Contact() {
   const [emailSent, setEmailSent] = useState(false);
 
   const defaultOptions = {
-    loop: emailSent,
+    loop: false,
     autoplay: emailSent,
     animationData: animationData,
     rendererSettings: {
