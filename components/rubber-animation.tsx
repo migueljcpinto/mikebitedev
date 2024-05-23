@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { getRandomColor } from "@/lib/utils";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 
 interface RubberAnimationProps {
   className?: string;
@@ -25,7 +25,7 @@ export const RubberAnimation: React.FC<RubberAnimationProps> = ({
   const [isPlaying, setIsPlaying] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-  const playRubberBandAnimation = () => {
+  const playRubberBandAnimation = useCallback(() => {
     controls.start({
       transform: rubberBandScale,
       transition: {
@@ -33,7 +33,7 @@ export const RubberAnimation: React.FC<RubberAnimationProps> = ({
       },
     });
     setIsPlaying(true);
-  };
+  }, [controls]);
 
   const handleHoverStart = () => {
     if (!isPlaying) {
@@ -48,27 +48,24 @@ export const RubberAnimation: React.FC<RubberAnimationProps> = ({
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      playRubberBandAnimation();
+      if (!isPlaying) {
+        playRubberBandAnimation();
+      }
     }, 5000);
 
     return () => clearInterval(intervalId);
-  }, [playRubberBandAnimation]);
+  }, [isPlaying, playRubberBandAnimation]);
 
   return (
     <motion.span
       animate={controls}
-      onTap={() => {
-        if (!isPlaying) {
-          playRubberBandAnimation();
-        }
-      }}
       onHoverStart={handleHoverStart}
       onAnimationComplete={handleAnimationComplete}
-      className={`font-bold text-3xl inline-block ${
+      className={`font-bold text-4xl inline-block ${
         isHovered ? getRandomColor() : ""
       } ${className || ""}`}
     >
-      {children}{" "}
+      {children}
     </motion.span>
   );
 };
