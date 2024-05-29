@@ -1,9 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-interface BackgroundCirclesProps {
-  children?: React.ReactNode;
-}
+import { BackgroundCirclesProps } from "@/lib/types";
 
 export default function BackgroundCircles(props: BackgroundCirclesProps) {
   return (

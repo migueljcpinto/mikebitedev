@@ -1,6 +1,5 @@
+import { Props } from "@/lib/types";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-
-type Props = {};
 
 export default function Typewriter({}: Props) {
   const [text, count] = useTypewriter({

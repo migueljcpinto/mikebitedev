@@ -1,7 +1,6 @@
-import { useAnimate, animate } from "framer-motion";
+import { AnimationSequence } from "@/lib/types";
+import { useAnimate } from "framer-motion";
 import React from "react";
-
-type AnimationSequence = Parameters<typeof animate>[0];
 
 function SparklingBtn() {
   const [scope, animate] = useAnimate();

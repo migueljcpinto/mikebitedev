@@ -2,11 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import { getRandomColor } from "@/lib/utils";
 
 import React, { useEffect, useState, useCallback } from "react";
-
-interface RubberAnimationProps {
-  className?: string;
-  children: React.ReactNode;
-}
+import { RubberAnimationProps } from "@/lib/types";
 
 const rubberBandScale = [
   "scale(1,1)",
