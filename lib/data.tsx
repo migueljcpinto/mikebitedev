@@ -88,6 +88,18 @@ export const experiencesData = [
     icon: React.createElement(LuGraduationCap),
     date: "2023 - 2024",
   },
+  {
+    title: "Internship Full Stack Developer",
+    location: "Vennie - Remote",
+    description: (
+      <>
+        I have the opportunity to learn and work on the development of a B2B
+        SaaS project with AI using ReactJS/Typescript, Python and FastAPI.
+      </>
+    ),
+    icon: React.createElement(CgWorkAlt),
+    date: "2012 - 2024",
+  },
 ] as const;
 
 export const projectsData = [
