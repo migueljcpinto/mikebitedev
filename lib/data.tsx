@@ -90,7 +90,7 @@ export const experiencesData = [
   },
   {
     title: "Internship Full Stack Developer",
-    location: "Vennie - Remote",
+    location: "Remote, Vennie",
     description: (
       <>
         I have the opportunity to learn and work on the development of a B2B
@@ -98,7 +98,7 @@ export const experiencesData = [
       </>
     ),
     icon: React.createElement(CgWorkAlt),
-    date: "2012 - 2024",
+    date: "2024 - 2024",
   },
 ] as const;
 
