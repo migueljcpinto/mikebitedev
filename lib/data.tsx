@@ -100,6 +100,18 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     date: "2024 - 2024",
   },
+  {
+    title: "Junior Frontend Developer",
+    location: "for suxess",
+    description: (
+      <>
+        The opportunity of a lifetime, finally being able to work and learn even
+        more as a junior frontend developer
+      </>
+    ),
+    icon: React.createElement(CgWorkAlt),
+    date: "2025 - currently 🚀",
+  },
 ] as const;
 
 export const projectsData = [
